@@ -1,0 +1,1 @@
+Group 2 - Find API to fetch current/past options data (volatility, price etc). Use the $SMH ETF.

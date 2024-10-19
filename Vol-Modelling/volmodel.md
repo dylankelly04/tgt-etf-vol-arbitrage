@@ -1,0 +1,1 @@
+Take the $SMH component equities and build a basic model to calculate the price and volatility of the overall $SMH ETF. Take into consideration using covariance, principle component analysis, and research how volatility and price for ETFs is computed.

@@ -1,0 +1,1 @@
+Get live updating options data for the $SMH ETF. Try to make it output basic data like it's price every second. Use data streaming packages to help.
