@@ -1,4 +1,4 @@
-from getInfo import getInfo
+from getInfo import getOverallInfo, getSpecificInfo
 
 tickers = ['SMH','NVDA', 'TSM', 'AVGO', 'TXN', 'QCOM',
     'AMAT', 'ASML', 'MU', 'ADI', 'LRCX', 'INTC', 'KLAC',
@@ -7,13 +7,9 @@ tickers = ['SMH','NVDA', 'TSM', 'AVGO', 'TXN', 'QCOM',
 
 limit = 10
 
-#issue with AMD
-#issue with SMH
 
-print(getInfo('SMH', 10))
+for ticker in tickers:
+    print(ticker)
+    print(getOverallInfo(ticker, limit))
 
-#for ticker in tickers:
-#    print(ticker)
-#    print(getInfo(ticker, limit))
-
-print(getInfo('SWKS', 10, 60, '2024-11-22'))
+print(getSpecificInfo('SWKS', 10, 60, '2024-11-22'))
