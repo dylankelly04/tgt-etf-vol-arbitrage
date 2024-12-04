@@ -8,8 +8,8 @@ tickers = ['SMH','NVDA', 'TSM', 'AVGO', 'TXN', 'QCOM',
 limit = 10
 
 
-for ticker in tickers:
-    print(ticker)
-    print(getOverallInfo(ticker, limit))
+#for ticker in tickers:
+#    print(ticker)
+#    print(getOverallInfo(ticker, limit))
 
-print(getSpecificInfo('SWKS', 10, 60, '2024-11-22'))
+print(getSpecificInfo('SMH', 1, 270, '2024-12-06'))
