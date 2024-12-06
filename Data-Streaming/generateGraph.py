@@ -22,6 +22,8 @@ def update(frame):
     global ax
     ax.clear()  # Clear the previous frame
     
+    print("updating...")
+
     # generate data
     time1, strike1, iv1, iv2 = generate_component_data1()
 
@@ -42,6 +44,7 @@ def update(frame):
     ax.set_ylabel("Days to Expiration")
     ax.set_zlabel("Implied Volatility")
     plt.tight_layout()
+    print("done updating")
 
 # Set up the animation
 ani = FuncAnimation(fig, update, interval=5*60000)  # Update every 5 minute

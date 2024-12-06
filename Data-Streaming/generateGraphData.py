@@ -88,9 +88,17 @@ def generate_component_data1():
 
     smh_dates, smh_strikes, smh_vols = generate_SMH_data()
 
+    if (len(smh_dates) > 50):
+        smh_dates = smh_dates[:50]
+        smh_strikes = smh_strikes[:50]
+        smh_vols = smh_vols[:50]
+
+    print(len(smh_strikes))
+
     component_vols = []
 
-    for i in range(0, len(smh_dates)):
+    # creates surface using 50 points max, can change this later but during the market there is a lot of data
+    for i in range(0, min(len(smh_dates), 50)):
 
         iv_total = 0
 
